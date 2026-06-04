@@ -44979,7 +44979,13 @@ self._$C3$_._$Behaviors$_._$Pin$_._$Cnds$_ = {
     }, t => {
         const s = t._$_GetNode$_(0);
         return () => s._$ExpObject$_() + 1;
-    }, () => 360, () => "", () => 99, () => .5, () => 540 ];
+    }, () => 360, () => "", t => {
+        const s = t._$_GetNode$_(0);
+        return () => s._$ExpObject$_() + 7;
+    }, t => {
+        const s = t._$_GetNode$_(0);
+        return () => s._$ExpObject$_() - 7;
+    }, () => 99, () => .5, () => 540 ];
 }
 
 var It = self._$C3$_;
