@@ -12660,20 +12660,21 @@ self._$C3$_._$Gfx$_._$ShaderProgramBase$_ = class {
         }
         _$_GetCoplanarColorRenderPassOpts$_() {
             const t = this._$_currentRenderTarget$_, s = {
-                colorAttachments: [ {
-                    view: t._$_GetTextureView$_(),
-                    loadOp: t._$_IsAwaitingClear$_() ? "clear" : "load",
-                    clearValue: t._$_GetClearColor$_().toJSON(),
-                    storeOp: "store"
-                } ],
-                depthStencilAttachment: {
-                    view: this._$_depthBufferView$_,
-                    depthReadOnly: !0,
-                    stencilReadOnly: !0
-                }
+                view: t._$_GetTextureView$_(),
+                loadOp: t._$_IsAwaitingClear$_() ? "clear" : "load",
+                clearValue: t._$_GetClearColor$_().toJSON(),
+                storeOp: "store"
+            }, i = {
+                view: this._$_depthBufferView$_,
+                depthReadOnly: !0
             };
-            return this._$_MaybeSetTimestampRenderPassOption$_(s), t._$_SetIsAwaitingClear$_(!1), 
-            s;
+            ff._$Platform$_._$IsAppleOS$_ ? (i.stencilLoadOp = "load", i.stencilStoreOp = "store") : i.stencilReadOnly = !0;
+            const e = {
+                colorAttachments: [ s ],
+                depthStencilAttachment: i
+            };
+            return this._$_MaybeSetTimestampRenderPassOption$_(e), t._$_SetIsAwaitingClear$_(!1), 
+            e;
         }
         _$_MaybeSetTimestampRenderPassOption$_(t) {
             if (!this.#T) return;
@@ -44969,25 +44970,28 @@ self._$C3$_._$Behaviors$_._$Pin$_._$Cnds$_ = {
     }, () => 962, t => {
         const s = t._$_GetNode$_(0)._$GetVar$_();
         return () => s._$GetValue$_() + 300;
-    }, () => 5497, () => 1, () => 3, () => 4, () => 5, () => 6, () => 7, () => "1", () => -3071, () => "ANIMATION 1", () => "ANIMATION 2", () => "ANIMATION 3", () => "ANIMATION 4", () => "5", () => -9347, () => "ANIMATION 5", () => "ANIMATION 6", () => "ANIMATION 7", () => "ANIMATION 8", () => "ANIMATION 9", () => "ANIMATION 10", () => "ANIMATION 11", () => 8, () => 9, () => 10, t => {
+    }, () => 5497, () => 1, () => 3, () => 4, () => 5, () => 6, () => 7, () => "1", () => 960, () => 5500, () => -3071, () => "ANIMATION 1", () => "ANIMATION 2", () => "2", () => "ANIMATION 3", () => "3", () => "ANIMATION 4", () => "4", () => "5", () => -9347, () => "ANIMATION 5", () => "ANIMATION 6", () => "6", () => "ANIMATION 7", () => "7", () => "ANIMATION 8", () => "8", () => "ANIMATION 9", () => "9", () => "ANIMATION 10", () => "10", () => "ANIMATION 11", () => "11", t => {
         const s = t._$_GetNode$_(0);
-        return () => s._$ExpObject$_() + 2;
+        return () => s._$ExpObject$_() + 4;
     }, t => {
         const s = t._$_GetNode$_(0);
-        return () => s._$ExpObject$_() - 2;
+        return () => s._$ExpObject$_() - 4;
     }, t => {
         const s = t._$_GetNode$_(0);
         return () => s._$ExpObject$_() + 1;
     }, () => 360, () => "", t => {
         const s = t._$_GetNode$_(0);
         return () => s._$ExpObject$_() + 1.5;
-    }, () => 99, () => .5, () => 960, () => 540 ];
+    }, t => {
+        const s = t._$_GetNode$_(0);
+        return () => s._$ExpObject$_() - 2;
+    }, () => 99, () => .5, () => 540 ];
 }
 
 var It = self._$C3$_;
 
 self._$C3_GetObjectRefTable$_ = function() {
-    return [ It._$Plugins$_._$Sprite$_, It._$Behaviors$_._$Anchor$_, It._$Plugins$_._$Mouse$_, It._$Plugins$_.Keyboard, It._$Plugins$_.Text, It._$Behaviors$_._$Pin$_, It._$Plugins$_.Audio, It._$Plugins$_.Keyboard._$Cnds$_._$OnKey$_, It._$Plugins$_._$System$_._$Acts$_._$GoToLayout$_, It._$Plugins$_._$Mouse$_._$Cnds$_._$IsOverObject$_, It._$Plugins$_.Audio._$Acts$_._$SetMasterVolume$_, It._$Plugins$_._$System$_._$Cnds$_._$OnLayoutStart$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetAnimSpeed$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetVisible$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetOpacity$_, It._$Behaviors$_._$Pin$_._$Acts$_._$PinByProperties$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetAnimFrame$_, It._$Plugins$_._$System$_._$Cnds$_._$EveryTick$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetPos$_, It._$Plugins$_._$Sprite$_._$Exps$_._$X$_, It._$Plugins$_._$Sprite$_._$Exps$_._$Y$_, It._$Plugins$_._$Mouse$_._$Cnds$_._$OnClick$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$CompareOpacity$_, It._$Plugins$_._$System$_._$Acts$_._$SetBoolVar$_, It._$Plugins$_._$Mouse$_._$Cnds$_._$OnWheel$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$CompareY$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$IsVisible$_, It._$Plugins$_._$System$_._$Acts$_._$ToggleBoolVar$_, It._$Plugins$_._$System$_._$Cnds$_._$CompareBoolVar$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetAnim$_, It._$Plugins$_._$System$_._$Acts$_._$SetVar$_, It._$Plugins$_.Text._$Acts$_._$SetText$_, It._$Plugins$_._$System$_._$Cnds$_._$CompareVar$_, It._$Plugins$_._$Sprite$_._$Exps$_.Opacity, It._$Plugins$_._$Sprite$_._$Exps$_._$AnimationFrame$_, It._$Plugins$_.Audio._$Acts$_._$PlayAtObject$_, It._$Plugins$_._$System$_._$Acts$_._$Wait$_, It._$Plugins$_.Audio._$Acts$_._$PlayAtPosition$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$OnAnimFinished$_, It._$Plugins$_._$Sprite$_._$Acts$_._$StartAnim$_ ];
+    return [ It._$Plugins$_._$Sprite$_, It._$Behaviors$_._$Anchor$_, It._$Plugins$_._$Mouse$_, It._$Plugins$_.Keyboard, It._$Plugins$_.Text, It._$Behaviors$_._$Pin$_, It._$Plugins$_.Audio, It._$Plugins$_._$Mouse$_._$Cnds$_._$IsOverObject$_, It._$Plugins$_.Audio._$Acts$_._$SetMasterVolume$_, It._$Plugins$_._$System$_._$Cnds$_._$OnLayoutStart$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetAnimSpeed$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetVisible$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetOpacity$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetAnimFrame$_, It._$Plugins$_._$System$_._$Cnds$_._$EveryTick$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetPos$_, It._$Plugins$_._$Sprite$_._$Exps$_._$X$_, It._$Plugins$_._$Sprite$_._$Exps$_._$Y$_, It._$Plugins$_._$Mouse$_._$Cnds$_._$OnClick$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$CompareOpacity$_, It._$Plugins$_._$System$_._$Acts$_._$SetBoolVar$_, It._$Plugins$_._$System$_._$Acts$_._$GoToLayout$_, It._$Plugins$_._$Mouse$_._$Cnds$_._$OnWheel$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$CompareY$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$IsVisible$_, It._$Plugins$_._$System$_._$Acts$_._$ToggleBoolVar$_, It._$Plugins$_._$System$_._$Cnds$_._$CompareBoolVar$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetAnim$_, It._$Plugins$_._$System$_._$Acts$_._$SetVar$_, It._$Plugins$_._$System$_._$Cnds$_._$CompareVar$_, It._$Plugins$_._$Sprite$_._$Exps$_.Opacity, It._$Plugins$_._$Sprite$_._$Exps$_._$AnimationFrame$_, It._$Plugins$_.Audio._$Acts$_._$PlayAtObject$_, It._$Plugins$_._$System$_._$Acts$_._$Wait$_, It._$Plugins$_.Audio._$Acts$_._$PlayAtPosition$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$OnAnimFinished$_, It._$Plugins$_._$Sprite$_._$Acts$_._$StartAnim$_ ];
 }, self._$C3_JsPropNameTable$_ = [ {
     _$Ancre$_: 0
 }, {
