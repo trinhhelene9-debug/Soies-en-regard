@@ -44979,19 +44979,22 @@ self._$C3$_._$Behaviors$_._$Pin$_._$Cnds$_ = {
     }, t => {
         const s = t._$_GetNode$_(0);
         return () => s._$ExpObject$_() + 1;
+    }, t => {
+        const s = t._$_GetNode$_(0);
+        return () => s._$ExpObject$_() - 1;
     }, () => 360, () => "", t => {
         const s = t._$_GetNode$_(0);
         return () => s._$ExpObject$_() + 7;
     }, t => {
         const s = t._$_GetNode$_(0);
         return () => s._$ExpObject$_() - 7;
-    }, () => 99, () => .5, () => 540 ];
+    }, () => 99, () => .5, () => 540, () => 50 ];
 }
 
 var It = self._$C3$_;
 
 self._$C3_GetObjectRefTable$_ = function() {
-    return [ It._$Plugins$_._$Sprite$_, It._$Behaviors$_._$Anchor$_, It._$Plugins$_._$Mouse$_, It._$Plugins$_.Keyboard, It._$Plugins$_.Text, It._$Behaviors$_._$Pin$_, It._$Plugins$_.Audio, It._$Plugins$_._$Mouse$_._$Cnds$_._$IsOverObject$_, It._$Plugins$_.Audio._$Acts$_._$SetMasterVolume$_, It._$Plugins$_._$System$_._$Cnds$_._$OnLayoutStart$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetAnimSpeed$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetVisible$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetOpacity$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetAnimFrame$_, It._$Plugins$_._$System$_._$Cnds$_._$EveryTick$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetPos$_, It._$Plugins$_._$Sprite$_._$Exps$_._$X$_, It._$Plugins$_._$Sprite$_._$Exps$_._$Y$_, It._$Plugins$_._$Mouse$_._$Cnds$_._$OnClick$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$CompareOpacity$_, It._$Plugins$_._$System$_._$Acts$_._$SetBoolVar$_, It._$Plugins$_._$System$_._$Acts$_._$GoToLayout$_, It._$Plugins$_._$Mouse$_._$Cnds$_._$OnWheel$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$CompareY$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$IsVisible$_, It._$Plugins$_._$System$_._$Acts$_._$ToggleBoolVar$_, It._$Plugins$_._$System$_._$Cnds$_._$CompareBoolVar$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetAnim$_, It._$Plugins$_._$System$_._$Acts$_._$SetVar$_, It._$Plugins$_._$System$_._$Cnds$_._$CompareVar$_, It._$Plugins$_._$Sprite$_._$Exps$_.Opacity, It._$Plugins$_._$Sprite$_._$Exps$_._$AnimationFrame$_, It._$Plugins$_.Audio._$Acts$_._$PlayAtObject$_, It._$Plugins$_._$System$_._$Acts$_._$Wait$_, It._$Plugins$_.Audio._$Acts$_._$PlayAtPosition$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$OnAnimFinished$_, It._$Plugins$_._$Sprite$_._$Acts$_._$StartAnim$_ ];
+    return [ It._$Plugins$_._$Sprite$_, It._$Behaviors$_._$Anchor$_, It._$Plugins$_._$Mouse$_, It._$Plugins$_.Keyboard, It._$Plugins$_.Text, It._$Behaviors$_._$Pin$_, It._$Plugins$_.Audio, It._$Plugins$_._$Mouse$_._$Cnds$_._$IsOverObject$_, It._$Plugins$_.Audio._$Acts$_._$SetMasterVolume$_, It._$Plugins$_._$System$_._$Cnds$_._$OnLayoutStart$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetAnimSpeed$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetVisible$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetOpacity$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetAnimFrame$_, It._$Plugins$_._$System$_._$Cnds$_._$EveryTick$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetPos$_, It._$Plugins$_._$Sprite$_._$Exps$_._$X$_, It._$Plugins$_._$Sprite$_._$Exps$_._$Y$_, It._$Plugins$_._$Mouse$_._$Cnds$_._$OnClick$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$CompareOpacity$_, It._$Plugins$_._$System$_._$Acts$_._$SetBoolVar$_, It._$Plugins$_._$System$_._$Acts$_._$GoToLayout$_, It._$Plugins$_._$Mouse$_._$Cnds$_._$OnWheel$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$CompareY$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$IsVisible$_, It._$Plugins$_._$System$_._$Acts$_._$ToggleBoolVar$_, It._$Plugins$_._$System$_._$Cnds$_._$CompareBoolVar$_, It._$Plugins$_._$Sprite$_._$Acts$_._$SetAnim$_, It._$Plugins$_._$System$_._$Acts$_._$SetVar$_, It._$Plugins$_._$System$_._$Cnds$_._$CompareVar$_, It._$Plugins$_._$Sprite$_._$Exps$_.Opacity, It._$Plugins$_._$Sprite$_._$Exps$_._$AnimationFrame$_, It._$Plugins$_.Audio._$Acts$_._$PlayAtObject$_, It._$Plugins$_._$System$_._$Acts$_._$Wait$_, It._$Plugins$_.Audio._$Acts$_._$PlayAtPosition$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$OnAnimFinished$_, It._$Plugins$_._$Sprite$_._$Acts$_._$StartAnim$_, It._$Plugins$_._$Sprite$_._$Cnds$_._$CompareFrame$_ ];
 }, self._$C3_JsPropNameTable$_ = [ {
     _$Ancre$_: 0
 }, {
@@ -45103,6 +45106,24 @@ self._$C3_GetObjectRefTable$_ = function() {
 }, {
     Audio: 0
 }, {
+    _$anapheEcriture$_: 0
+}, {
+    _$yamamaiEcriture$_: 0
+}, {
+    _$samiaEcriture$_: 0
+}, {
+    _$Sprite7$_: 0
+}, {
+    _$Sprite8$_: 0
+}, {
+    _$TUTO2$_: 0
+}, {
+    _$Sprite9$_: 0
+}, {
+    _$tutoAvancer$_: 0
+}, {
+    _$tutoReculer$_: 0
+}, {
     _$etatDeComparaison$_: 0
 }, {
     _$anaphe$_: 0
@@ -45171,7 +45192,16 @@ self._$C3_GetObjectRefTable$_ = function() {
     _$Sprite6$_: class extends self._$ISpriteInstance$_ {},
     _$explorer$_: class extends self._$ISpriteInstance$_ {},
     _$tutoMenu$_: class extends self._$ISpriteInstance$_ {},
-    Audio: class extends self._$IInstance$_ {}
+    Audio: class extends self._$IInstance$_ {},
+    _$anapheEcriture$_: class extends self._$ISpriteInstance$_ {},
+    _$yamamaiEcriture$_: class extends self._$ISpriteInstance$_ {},
+    _$samiaEcriture$_: class extends self._$ISpriteInstance$_ {},
+    _$Sprite7$_: class extends self._$ISpriteInstance$_ {},
+    _$Sprite8$_: class extends self._$ISpriteInstance$_ {},
+    _$TUTO2$_: class extends self._$ISpriteInstance$_ {},
+    _$Sprite9$_: class extends self._$ISpriteInstance$_ {},
+    _$tutoAvancer$_: class extends self._$ISpriteInstance$_ {},
+    _$tutoReculer$_: class extends self._$ISpriteInstance$_ {}
 };
 /*!
 @fileoverview gl-matrix - High performance matrix and vector operations
