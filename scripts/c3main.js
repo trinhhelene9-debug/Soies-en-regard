@@ -45126,6 +45126,10 @@ self._$C3_GetObjectRefTable$_ = function() {
 }, {
     _$retourMenu$_: 0
 }, {
+    _$tuto3$_: 0
+}, {
+    _$tuto4$_: 0
+}, {
     _$etatDeComparaison$_: 0
 }, {
     _$anaphe$_: 0
@@ -45204,7 +45208,9 @@ self._$C3_GetObjectRefTable$_ = function() {
     _$Sprite9$_: class extends self._$ISpriteInstance$_ {},
     _$tutoAvancer$_: class extends self._$ISpriteInstance$_ {},
     _$tutoReculer$_: class extends self._$ISpriteInstance$_ {},
-    _$retourMenu$_: class extends self._$ISpriteInstance$_ {}
+    _$retourMenu$_: class extends self._$ISpriteInstance$_ {},
+    _$tuto3$_: class extends self._$ISpriteInstance$_ {},
+    _$tuto4$_: class extends self._$ISpriteInstance$_ {}
 };
 /*!
 @fileoverview gl-matrix - High performance matrix and vector operations
