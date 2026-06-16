@@ -12002,7 +12002,7 @@ self._$C3$_._$Gfx$_._$ShaderProgramBase$_ = class {
                 if (this.#u.failIfMajorPerformanceCaveat && t.isFallbackAdapter) throw new Error("renderer-unavailable (WebGPU provided fallback adapter)");
                 if ("adreno-7xx" === t.architecture) throw new Error("WebGPU disabled on adreno-7xx devices - see https://issues.chromium.org/issues/329702056");
                 if ("intel" === t.vendor && ("gen-7" === t.architecture || "gen7" === t.architecture || "gen-9" === t.architecture || "gen9" === t.architecture)) throw new Error("WebGPU disabled on Intel Gen7 and Gen9 GPUs - see https://issues.chromium.org/issues/462468373");
-                if ("img-tec" === t.vendor && "d-series" === t.architecture) throw new Error("WebGPU disabled on img-tec d-series GPUs - see https://github.com/Scirra/Construct-bugs/issues/8996");
+                if ("img-tec" === t.vendor && ("d-series" === t.architecture || "rogue" === t.architecture)) throw new Error("WebGPU disabled on img-tec d-series GPUs - see https://github.com/Scirra/Construct-bugs/issues/8996");
             }
             const t = [];
             this.#n.features.has("core-features-and-limits") && !this.#u._$forceCompatibilityMode$_ && t.push("core-features-and-limits"), 
@@ -28351,11 +28351,13 @@ self._$C3$_._$PropertyTrackState$_._$PropertyInterpolationAdapter$_ = class {
             const t = this._$GetCurrentEventStackFrame$_();
             let s = !1;
             this._$_runningEventsDepth$_++;
+            const i = this._$_executingTriggerDepth$_;
             for (let i = 0, e = this._$_scheduledWaits$_.length; i < e; ++i) {
                 const e = this._$_scheduledWaits$_[i];
                 e._$_ShouldRun$_() && await e._$_DebugRun$_(t), e._$ShouldRelease$_() && (s = !0);
             }
-            s && (this._$_FilterScheduledWaitsToRelease$_(), t._$Reset$_(null)), this._$_runningEventsDepth$_--;
+            this._$_executingTriggerDepth$_ = i, s && (this._$_FilterScheduledWaitsToRelease$_(), 
+            t._$Reset$_(null)), this._$_runningEventsDepth$_--;
         }
         _$_FilterScheduledWaitsToRelease$_() {
             const t = Cw._$arrayFilterOut$_(this._$_scheduledWaits$_, t => t._$ShouldRelease$_());
@@ -45130,6 +45132,12 @@ self._$C3_GetObjectRefTable$_ = function() {
 }, {
     _$tuto4$_: 0
 }, {
+    _$Sprite10$_: 0
+}, {
+    _$fondTuto$_: 0
+}, {
+    _$TutoClickP$_: 0
+}, {
     _$etatDeComparaison$_: 0
 }, {
     _$anaphe$_: 0
@@ -45210,7 +45218,10 @@ self._$C3_GetObjectRefTable$_ = function() {
     _$tutoReculer$_: class extends self._$ISpriteInstance$_ {},
     _$retourMenu$_: class extends self._$ISpriteInstance$_ {},
     _$tuto3$_: class extends self._$ISpriteInstance$_ {},
-    _$tuto4$_: class extends self._$ISpriteInstance$_ {}
+    _$tuto4$_: class extends self._$ISpriteInstance$_ {},
+    _$Sprite10$_: class extends self._$ISpriteInstance$_ {},
+    _$fondTuto$_: class extends self._$ISpriteInstance$_ {},
+    _$TutoClickP$_: class extends self._$ISpriteInstance$_ {}
 };
 /*!
 @fileoverview gl-matrix - High performance matrix and vector operations
