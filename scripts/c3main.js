@@ -44956,16 +44956,10 @@ self._$C3$_._$Behaviors$_._$Pin$_._$Cnds$_ = {
         return () => s._$ExpObject$_() - 40;
     }, t => {
         const s = t._$_GetNode$_(0);
-        return () => s._$ExpObject$_() - 70;
-    }, t => {
-        const s = t._$_GetNode$_(0);
         return () => s._$ExpObject$_() + 5;
     }, t => {
         const s = t._$_GetNode$_(0);
         return () => s._$ExpObject$_() + 40;
-    }, t => {
-        const s = t._$_GetNode$_(0);
-        return () => s._$ExpObject$_() + 70;
     }, () => 1085, t => {
         const s = t._$_GetNode$_(0)._$GetVar$_();
         return () => s._$GetValue$_();
@@ -45033,8 +45027,6 @@ self._$C3_GetObjectRefTable$_ = function() {
     _$Sprite3$_: 0
 }, {
     _$Clavier$_: 0
-}, {
-    _$EFFETSTACHES$_: 0
 }, {
     _$BOUTONMILIEU$_: 0
 }, {
@@ -45171,7 +45163,6 @@ self._$C3_GetObjectRefTable$_ = function() {
     _$Sprite2$_: class extends self._$ISpriteInstance$_ {},
     _$Sprite3$_: class extends self._$ISpriteInstance$_ {},
     _$Clavier$_: class extends self._$IInstance$_ {},
-    _$EFFETSTACHES$_: class extends self._$ISpriteInstance$_ {},
     _$BOUTONMILIEU$_: class extends self._$ISpriteInstance$_ {},
     _$BOUTONREPRODUCTION$_: class extends self._$ISpriteInstance$_ {},
     _$Texte$_: class extends self._$ITextInstance$_ {},
